@@ -64,7 +64,6 @@ ul {
 }
 .header-links a,
 .header-contacts a {
-  display: block;
   align-self: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -225,7 +224,7 @@ ul {
   color: #212121;
 }
 .member-profession {
-  margin: 0px;
+  margin: 0px 0px 16px 0px;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
@@ -238,18 +237,19 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 16px;
   padding-left: 32px;
   padding-right: 32px;
 }
 .member-social-link {
-  background: #ffffff;
   color: #ffffff;
   height: 44px;
   width: 44px;
   border-radius: 50%;
 }
-a > .member-social-link {
+.member-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   fill: #afb1b8;
 }
 .member-social-link:hover {
@@ -277,11 +277,11 @@ a > .member-social-link {
 .regular-customers-logo > svg {
   fill: currentColor;
 }
-a > .regular-customers-logo:hover {
+.regular-customers-logo:hover {
   cursor: pointer;
   border-color: #2196f3;
 }
-a > .regular-customers-logo:hover svg {
+.regular-customers-logo:hover svg {
   fill: #2196f3;
 }
 
@@ -356,14 +356,17 @@ a > .regular-customers-logo:hover svg {
   height: 44px;
   width: 44px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social-link a {
+  margin: 0px;
 }
 .footer-social-link:hover {
   background: #2196f3;
 }
-.footer-social-link {
-  padding: 12px;
-}
-.footer-social-link + li {
+.footer-social-links > li + li {
   margin-left: 10px;
 }
 
