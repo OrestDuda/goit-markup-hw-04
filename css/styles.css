@@ -1,3 +1,12 @@
+/*---------------------------------------------------------- Html */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 /*---------------------------------------------------------- Body */
 body {
   font-family: 'Roboto', sans-serif;
@@ -262,7 +271,6 @@ a > .member-social-link {
   height: 90px;
   width: 170px;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
   color: #afb1b8;
 }
@@ -421,7 +429,6 @@ a > .regular-customers-logo:hover svg {
 .portfolio-examples > .container li {
   background: #ffffff;
   border: 1px solid #eeeeee;
-  box-sizing: border-box;
   margin-bottom: 30px;
 }
 .portfolio-info {
