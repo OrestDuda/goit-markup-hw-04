@@ -48,6 +48,9 @@ ul {
   text-decoration: none;
   color: #2196f3;
 }
+.header-logo span {
+  color: #212121;
+}
 .navigation-links {
   align-self: center;
 }
